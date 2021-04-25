@@ -35,18 +35,18 @@ export default function SinglePost() {
     if(!singlePost) return <div>Loading...</div>
 
     return (
-        <main className="bg-gradient-to-b from-purple-400 via-indigo-300 to-pink-200 min-h-screen p-12">
+        <main className="bg-gradient-to-b from-purple-400 via-indigo-300 to-pink-200 min-h-screen p-6 sm:p-12">
             <article className="container shadow-lg mx-auto bg-white rounded-lg">
                 <header className="relative">
-                    <div className="absolute h-full w-full flex items-center justify-center p-8">
-                        <div className="bg-white bg-opacity-75 rounded p-12">
-                            <h1 className="cursive text-3xl lg:text-6xl mb-4">{singlePost.title}</h1>
+                    <div className="absolute h-full w-full flex items-center justify-center p-4 sm:p-8">
+                        <div className="bg-white bg-opacity-75 rounded p-6 sm:p-12">
+                            <h1 className="cursive text-2xl sm:text-3xl lg:text-6xl mb-2 sm:mb-4">{singlePost.title}</h1>
                             <div className="flex justify-center text-gray-800">
                                 <img 
                                 src={urlFor(singlePost.authorImage).url()} 
                                 alt={singlePost.name}
                                 className="w-10 h-10 rounded-full"/>
-                                <p className="casual flex items-center pl-2 text-2xl">
+                                <p className="casual flex items-center pl-2 text-1xl sm:text-2xl">
                                     {singlePost.name}
                                 </p>
                             </div>
@@ -56,7 +56,7 @@ export default function SinglePost() {
                     style={{height: "400px"}}
                     />
                 </header>
-                <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full post-text">
+                <div className="px-6 sm:px-16 lg:px-48 py-2 sm:py-12 lg:py-20 prose lg:prose-xl max-w-full post-text">
                     <BlockContent blocks={singlePost.body} projectId="370xn94r" dataset="production"/>
                 </div>
             </article>
