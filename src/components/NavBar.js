@@ -7,37 +7,47 @@ export default function NavBar() {
     return (
         <header className="bg-black">
             <div className="container mx-auto flex justify-between">
-                <nav className="flex">
+                <nav className="flex flex-col sm:flex-row items-center">
                     <NavLink 
                     to="/" 
                     exact 
                     activeClassName="text-white"
-                    className="inline-flex items-center sm:py-6 px-3 mr-4 text-white hover:text-white text-1xl md:text-4xl font-bold cursive tracking-widest text-white">
+                    className="inline-flex items-center pl-6 pt-6 pb-3 sm:py-6 px-3 mr-4 text-white hover:text-white text-2xl md:text-4xl font-bold cursive tracking-widest text-white">
                         AntonPodkur
                     </NavLink>
-                    <button className="text-white casual hidden">Menu</button>
-                    <div className="flex flex-col sm:flex-row ">
-                    <NavLink 
-                    to="/post" 
-                    className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
-                    activeClassName="text-red-100 bg-purple-700 rounded"
+                    <div className="pb-3 sm:pb-0">
+                    <button className="text-black cursor-pointer text-sm leading-none px-3 py-3 border border-solid border-transparent rounded bg-transparent block sm:hidden outline-none focus:outline-none casual bg-gradient-to-br from-purple-400 to-purple-300"
+                    type="button"
+                    onClick={()=>setNavbarOpen(!navbarOpen)}
                     >
-                        Blog
-                    </NavLink>
-                    <NavLink 
-                    to="/project" 
-                    className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
-                    activeClassName="text-red-100 bg-purple-700 rounded"
-                    >
-                        Projects
-                    </NavLink>
-                    <NavLink 
-                    to="/about" 
-                    className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
-                    activeClassName="text-red-100 bg-purple-700 rounded"
-                    >
-                        About me
-                    </NavLink>
+                        Menu
+                    </button>
+                    </div>
+                    <div className={
+              "sm:flex flex-col sm:flex-row items-center" +
+              (navbarOpen ? " flex" : " hidden")
+            }>
+                        <NavLink 
+                        to="/post" 
+                        className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
+                        activeClassName="text-red-100 bg-purple-700 rounded"
+                        >
+                            Blog
+                        </NavLink>
+                        <NavLink 
+                        to="/project" 
+                        className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
+                        activeClassName="text-red-100 bg-purple-700 rounded"
+                        >
+                            Projects
+                        </NavLink>
+                        <NavLink 
+                        to="/about" 
+                        className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
+                        activeClassName="text-red-100 bg-purple-700 rounded"
+                        >
+                            About me
+                        </NavLink>
                     </div>
                 </nav>
                 <div className="inline-flex sm:py-3 px-3 my-6">
