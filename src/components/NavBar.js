@@ -12,7 +12,7 @@ export default function NavBar() {
                     to="/" 
                     exact 
                     activeClassName="text-white"
-                    className="inline-flex items-center pl-6 pt-6 pb-3 sm:py-6 px-3 mr-4 text-white hover:text-white text-2xl md:text-4xl font-bold cursive tracking-widest text-white"
+                    className="inline-flex items-center pl-6 pt-6 pb-3 sm:py-6 px-3 mr-4 text-2xl md:text-4xl font-bold cursive tracking-widest font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-400 via-indigo-300 to-pink-200"
                     onClick={()=>{setNavbarOpen(false)}}
                     >
                         AntonPodkur
