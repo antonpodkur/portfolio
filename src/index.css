@@ -54,10 +54,11 @@
       left: 5%;
       opacity: 0;
   }
-  15%{
+  40%{
     opacity: 0%;
-    width: 15%;
-    left:15%;
+  }
+  80%{
+    opacity: 1;
   }
   100% {
       opacity: 100%;
