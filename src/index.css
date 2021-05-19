@@ -39,7 +39,7 @@
 }
 
 .text-reveal-left{
-  animation: text-arrive-left 2s 1;
+  animation: text-arrive-left 2s 1 forwards;
 }
 
 .text-reveal{
@@ -55,13 +55,13 @@
       opacity: 0;
   }
   40%{
-    opacity: 0%;
+    opacity: 0;
   }
   80%{
     opacity: 1;
   }
   100% {
-      opacity: 100%;
+      opacity: 1;
       width: 100%;
       left: 100%;
   }
