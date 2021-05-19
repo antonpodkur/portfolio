@@ -37,3 +37,40 @@
   margin-right: auto;
   border-radius: 5xp;
 }
+
+.text-reveal-left{
+  animation: text-arrive-left 2s 1;
+}
+
+.text-reveal{
+  opacity: 0;
+  animation: text-arrive 2s 1 forwards;
+  animation-delay: 2s;
+}
+
+@keyframes text-arrive-left {
+  0% {
+      width: 0%;
+      left: 5%;
+      opacity: 0;
+  }
+  15%{
+    opacity: 0%;
+    width: 15%;
+    left:15%;
+  }
+  100% {
+      opacity: 100%;
+      width: 100%;
+      left: 100%;
+  }
+}
+
+@keyframes text-arrive {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
