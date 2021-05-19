@@ -31,24 +31,24 @@ export default function NavBar() {
             }>
                         <NavLink 
                         to="/post" 
-                        className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
-                        activeClassName="text-red-100 bg-purple-700 rounded"
+                        className="inline-flex items-center sm:py-3 md:mx-1 px-3 my-6 text-white casual nav-button"
+                        activeClassName="bg-purple-700 rounded"
                         onClick={()=>{setNavbarOpen(false)}}
                         >
                             Blog
                         </NavLink>
                         <NavLink 
                         to="/project" 
-                        className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
-                        activeClassName="text-red-100 bg-purple-700 rounded"
+                        className="inline-flex items-center sm:py-3 md:mx-1 px-3 my-6 text-white casual nav-button"
+                        activeClassName="bg-purple-700 rounded"
                         onClick={()=>{setNavbarOpen(false)}}
                         >
                             Projects
                         </NavLink>
                         <NavLink 
                         to="/about" 
-                        className="inline-flex items-center sm:py-3 px-3 my-6 text-white hover:text-gray-400 casual"
-                        activeClassName="text-red-100 bg-purple-700 rounded"
+                        className="inline-flex items-center sm:py-3 md:mx-1 px-3 my-6 text-white casual nav-button"
+                        activeClassName="bg-purple-700 rounded"
                         onClick={()=>{setNavbarOpen(false)}}
                         >
                             About me

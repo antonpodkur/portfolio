@@ -23,6 +23,15 @@
   font-weight: 400;
 }
 
+.nav-button {
+  transition: all .5s ease;
+}
+
+.nav-button:hover {
+  background-color: #6D28D9;
+  border-radius: 0.25rem;
+}
+
 .prose img {
   margin-left: auto;
   margin-right: auto;
