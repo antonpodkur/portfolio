@@ -4,6 +4,8 @@ import sanityClient from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 
+import Loading from './Loading';
+
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source){
@@ -32,7 +34,7 @@ export default function SinglePost() {
         .catch(console.error);
     },[slug]);
 
-    if(!singlePost) return <div>Loading...</div>
+    if(!singlePost) return(<Loading/>);
 
     return (
         <main className="bg-gradient-to-b from-purple-400 via-indigo-300 to-pink-200 min-h-screen p-6 sm:p-12">

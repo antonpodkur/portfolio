@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import sanityClient from '../client';
 import BlockContent from '@sanity/block-content-to-react';
 
+import Loading from './Loading';
+
 export default function About() {
     const [author, setAuthor] = useState(null);
 
@@ -20,7 +22,7 @@ export default function About() {
         .catch(console.error);
     }, []);
 
-    if(!author) return(<div>Loading...</div>)
+    if(!author) return(<Loading/>)
 
     return (
         <main className="bg-gradient-to-b from-purple-400 via-indigo-300 to-pink-200 min-h-screen sm:p-12">
