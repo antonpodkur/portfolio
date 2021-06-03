@@ -91,6 +91,7 @@ export default function About() {
                                     <li>Python</li>
                                     <li>C#</li>
                                     <li>Java</li>
+                                    <li>Linux/Unix</li>
                                     <li>Problem-solving skills</li>
                                 </ul>
                             </div>
