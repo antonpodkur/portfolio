@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import sanityClient from '../client';
 
+import '../styles/animations.css'
+
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -25,7 +27,7 @@ export default function Project() {
                 <h2 className="text-lg text-gray-800 flex justify-center mb-12 casual">Welcome to my projects</h2>
                 <section className="grid lg:grid-cols-2 gap-8">
                     { projectData && projectData.map((project, index) => (
-                    <article className="relative rounded-lg shadow-xl bg-white p-8 sm:p-16">
+                    <article className="relative rounded-lg shadow-xl bg-white p-8 sm:p-16 fade-in-right-025s">
                         <h3 className="text-gray-800 text-2xl sm:text-3xl font-bold mb-2 hover:text-purple-700 cursive">
                             <a href={project.link} alt={project.title} target="_blank" rel="noopener noreferrer">
                                 {project.title}

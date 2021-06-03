@@ -31,7 +31,7 @@ export default function Post() {
                 <h2 className="text-lg text-gray-800 flex justify-center mb-12 casual">Welcome to my blog page</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     { postData && postData.map((post,index) => (
-                    <article>
+                    <article className="fade-in-right-025s">
                         <Link to={"/post/"+post.slug.current} key={post.slug.current}>
                         <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-purple-700" key={index}>
                             <img 

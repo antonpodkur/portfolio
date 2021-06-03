@@ -18,6 +18,12 @@
   user-select: none;
 }
 
+.casual-bold {
+  font-family: "Poppins";
+  font-weight: 700;
+  user-select: none;
+}
+
 .post-text {
   font-family: "Roboto";
   font-weight: 400;

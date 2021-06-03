@@ -6,6 +6,8 @@ import BlockContent from '@sanity/block-content-to-react';
 
 import Loading from './Loading';
 
+import '../styles/animations.css'
+
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source){
@@ -38,7 +40,7 @@ export default function SinglePost() {
 
     return (
         <main className="bg-gradient-to-b from-purple-400 via-indigo-300 to-pink-200 min-h-screen p-6 sm:p-12">
-            <article className="container shadow-lg mx-auto bg-white rounded-lg">
+            <article className="container shadow-lg mx-auto bg-white rounded-lg fade-in-top-025s">
                 <header className="relative">
                     <div className="absolute h-full w-full flex items-center justify-center p-4 sm:p-8">
                         <div className="bg-white bg-opacity-75 rounded p-6 sm:p-12">
